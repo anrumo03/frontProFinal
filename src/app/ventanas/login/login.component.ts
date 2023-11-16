@@ -21,7 +21,7 @@ export class LoginComponent {
     if(this.idUsuario=="anrumito" && this.contrasenia == "hola123"){
       this.router.navigate(['medico'])
     }else if (this.idUsuario=="isa" && this.contrasenia == "hola123"){
-
+      this.router.navigate(['paciente'])
     }
   }
 }

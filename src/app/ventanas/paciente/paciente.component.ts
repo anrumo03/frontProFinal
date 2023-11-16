@@ -15,4 +15,8 @@ export class PacienteComponent {
   pedirCita() {
     this.router.navigate(['crear'])
   }
+
+  cerrarSesion() {
+    this.router.navigate(['login'])
+  }
 }

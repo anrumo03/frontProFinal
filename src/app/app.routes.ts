@@ -7,11 +7,11 @@ import {PacienteComponent} from "./ventanas/paciente/paciente.component";
 import {CrearCitaComponent} from "./ventanas/crear-cita/crear-cita.component";
 
 export const routes: Routes = [
-  {path: '', redirectTo:'/login', pathMatch: 'full'},
   {path: 'login', component: LoginComponent},
   {path: 'register', component: RegistroComponent},
   {path: 'medico', component: MedicoComponent},
   {path: 'atender', component: AtenderCitaComponent},
   {path: 'paciente', component: PacienteComponent},
-  {path: 'crear', component: CrearCitaComponent}
+  {path: 'crear', component: CrearCitaComponent},
+  {path: '**', redirectTo:'/login', pathMatch: 'full'},
 ];

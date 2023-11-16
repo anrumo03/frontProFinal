@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import {AppModule} from "../../app.module";
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-medico',
@@ -9,4 +8,10 @@ import {AppModule} from "../../app.module";
 })
 export class MedicoComponent {
 
+  constructor(private router:Router) {
+  }
+
+  cerrarSesion() {
+    this.router.navigate(['login'])
+  }
 }
