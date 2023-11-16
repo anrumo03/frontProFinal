@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-atender-cita',
@@ -7,8 +7,14 @@ import { CommonModule } from '@angular/common';
   styleUrl: './atender-cita.component.css'
 })
 export class AtenderCitaComponent {
+  constructor(private router: Router) {
 
+  }
   confirmarDiagnostico() {
 
+  }
+
+  back() {
+    this.router.navigate(['medico'])
   }
 }

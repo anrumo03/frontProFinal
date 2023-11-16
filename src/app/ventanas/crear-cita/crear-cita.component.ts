@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-crear-cita',
@@ -7,8 +7,14 @@ import { CommonModule } from '@angular/common';
   styleUrl: './crear-cita.component.css'
 })
 export class CrearCitaComponent {
+  constructor(private router: Router) {
 
+  }
   enviarCita() {
 
+  }
+
+  back() {
+    this.router.navigate(['paciente'])
   }
 }

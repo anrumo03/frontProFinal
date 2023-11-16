@@ -14,6 +14,7 @@ import {MedicoComponent} from "./ventanas/medico/medico.component";
 import {AtenderCitaComponent} from "./ventanas/atender-cita/atender-cita.component";
 import {PacienteComponent} from "./ventanas/paciente/paciente.component";
 import {CrearCitaComponent} from "./ventanas/crear-cita/crear-cita.component";
+import {recuperarContraComponent} from "./ventanas/recuperar-contra/recuperar-contra.component";
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import {CrearCitaComponent} from "./ventanas/crear-cita/crear-cita.component";
     MedicoComponent,
     AtenderCitaComponent,
     PacienteComponent,
-    CrearCitaComponent
+    CrearCitaComponent,
+    recuperarContraComponent
   ],
   imports: [
     BrowserModule,
@@ -33,6 +35,7 @@ import {CrearCitaComponent} from "./ventanas/crear-cita/crear-cita.component";
     BrowserAnimationsModule,
     RouterModule.forRoot(routes),
     HttpClientModule,
+
   ],
 
   providers: [],

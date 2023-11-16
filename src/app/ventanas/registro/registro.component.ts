@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
 import {Router} from "@angular/router";
 
 
@@ -26,7 +25,6 @@ export class RegistroComponent {
   }
 
   backLogin() {
-
     this.router.navigate(['login'])
   }
 }

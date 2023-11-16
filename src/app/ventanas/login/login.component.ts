@@ -24,4 +24,15 @@ export class LoginComponent {
       this.router.navigate(['paciente'])
     }
   }
+
+  olvidoContrasenia(){
+    this.router.navigate(['recuperar'])
+    return false;
+  }
+
+  registrarse(){
+
+    this.router.navigate(['register'])
+    return false;
+  }
 }
