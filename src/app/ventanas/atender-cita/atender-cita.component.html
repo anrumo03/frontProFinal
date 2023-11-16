@@ -1,1 +1,46 @@
-<p>atender-cita works!</p>
+<!-- app-atender-cita.component.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atender Cita</title>
+</head>
+<body>
+
+<div>
+  <h2>Atender Cita</h2>
+
+  <div>
+    <label>ID de la Cita:</label>
+    <span>1</span>
+  </div>
+
+  <div>
+    <label>Paciente:</label>
+    <span>Juan Pérez</span>
+  </div>
+
+  <div>
+    <label>Fecha de Atención:</label>
+    <span>2023-11-15</span>
+  </div>
+
+  <div>
+    <label>Motivo:</label>
+    <span>Tos fuerte y constante</span>
+  </div>
+
+  <div>
+    <label>Diagnóstico:</label>
+    <textarea rows="4" cols="50"></textarea>
+  </div>
+
+  <div>
+    <button (click)="confirmarDiagnostico()">Confirmar Diagnóstico</button>
+  </div>
+</div>
+
+</body>
+</html>
+

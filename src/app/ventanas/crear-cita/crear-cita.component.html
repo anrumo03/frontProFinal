@@ -1,1 +1,31 @@
-<p>crear-cita works!</p>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pedir Cita</title>
+</head>
+<body>
+
+<div style="text-align: center;">
+  <h1>Pedir Cita</h1>
+
+  <form>
+    <label for="motivo">Motivo:</label>
+    <textarea rows="4" cols="50" id="motivo" name="motivo" placeholder="Ingrese el motivo" required></textarea>
+
+    <label for="medico">Médico:</label>
+    <select id="medico" name="medico" required>
+      <option value="medico1">Dr. Juan Pérez</option>
+      <option value="medico2">Dra. María González</option>
+    </select>
+
+    <label for="fecha">Fecha:</label>
+    <input type="date" id="fecha" name="fecha" required>
+
+    <button type="submit" (click)="enviarCita()">Pedir Cita</button>
+  </form>
+</div>
+</body>
+</html>
+

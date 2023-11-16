@@ -1,1 +1,36 @@
-<p>citas works!</p>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tabla de Citas</title>
+</head>
+<body>
+
+<table>
+  <thead>
+  <tr>
+    <th>ID</th>
+    <th>Día de Atención</th>
+    <th>Estado</th>
+    <th>Paciente</th>
+    <th>Médico</th>
+  </tr>
+  </thead>
+  <tbody>
+  <!-- Ejemplo de fila en la tabla -->
+  <tr>
+    <td>1</td>
+    <td>2023-11-15</td>
+    <td>Pendiente</td>
+    <td>Juan Pérez</td>
+    <td>Dr. García</td>
+    <td><button (click)="atenderCita()">Atender</button></td>
+  </tr>
+  <!-- Puedes agregar más filas según tus datos -->
+  </tbody>
+</table>
+
+</body>
+</html>
+

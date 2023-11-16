@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-login',
@@ -11,14 +12,16 @@ export class LoginComponent {
 
   contrasenia: string;
 
-  constructor() {
+  constructor(private router:Router) {
     this.idUsuario = '';
     this.contrasenia = '';
   }
 
   iniciarSesion() {
     if(this.idUsuario=="anrumito" && this.contrasenia == "hola123"){
-      console.log('hola amiguito')
+      this.router.navigate(['medico'])
+    }else if (this.idUsuario=="isa" && this.contrasenia == "hola123"){
+
     }
   }
 }
