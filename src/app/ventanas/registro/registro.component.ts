@@ -12,6 +12,7 @@ export class RegistroComponent {
   contrasenia: string;
   cedula: string;
   nombre: string;
+  mostrarMensaje: boolean = false;
 
   constructor(private router: Router) {
     this.cedula = '';
@@ -21,7 +22,14 @@ export class RegistroComponent {
   }
 
   registrarUsuario() {
-    this.backLogin();
+    if(this.tipoUsuario == '' || this.nombre == '' || this.cedula == '' || this.contrasenia == ''){
+      this.mostrarMensaje = true;
+      setTimeout(() => {
+        this.mostrarMensaje = false;
+      }, 3000);
+    }else{
+
+    }
   }
 
   backLogin() {

@@ -34,8 +34,7 @@ import {recuperarContraComponent} from "./ventanas/recuperar-contra/recuperar-co
     FormsModule,
     BrowserAnimationsModule,
     RouterModule.forRoot(routes),
-    HttpClientModule,
-
+    HttpClientModule
   ],
 
   providers: [],

@@ -24,7 +24,9 @@
     <option value="paciente">Paciente</option>
     <option value="medico">Médico</option>
   </select>
-
+  <div *ngIf="mostrarMensaje" className="mensaje">
+    Por favor llene todos los campos
+  </div>
   <button type="submit" (click)="registrarUsuario()">Registrar Usuario</button>
   <button type="button" class="volver" (click)="backLogin()">Volver</button>
 

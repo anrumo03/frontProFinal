@@ -11,7 +11,7 @@ export class CrearCitaComponent {
 
   }
   enviarCita() {
-
+    this.router.navigate(['paciente'])
   }
 
   back() {

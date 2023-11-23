@@ -79,3 +79,7 @@ button.volver {
 button.volver:hover {
   background-color: #c0392b; /* Cambio de color al pasar el mouse */
 }
+
+.mensaje {
+  z-index: 0;
+}
